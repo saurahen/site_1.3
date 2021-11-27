@@ -33,7 +33,10 @@ a:active {
     text-decoration: none;
 }
 
-.link {}
+
+
+
+
 
 .wrapper {
     background-color: #F8F8F8;
@@ -152,3 +155,39 @@ a:active {
 }
 
 .main__button {}
+
+@media (min-width: 1120px) {
+    .contact {
+        display: none;
+    }
+}
+
+@media (max-width: 1120px) {
+    .repair-block {
+        display: flex;
+        margin-left: 45px;
+    }
+
+    .contact {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .call,
+    .chat {
+        margin-right: 16px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .repair-block {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .contact {
+        display: none;
+    }
+}
