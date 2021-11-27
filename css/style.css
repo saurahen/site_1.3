@@ -8,6 +8,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'TT Lakes Regular';
+    src: url('../files/fonts/TTLakes-Regular.eot');
+    src: url('../files/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../files/fonts/TTLakes-Regular.woff') format('woff'),
+        url('../files/fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
 }
@@ -15,6 +25,15 @@ body {
 ul li {
     list-style: none;
 }
+
+a,
+a:focus,
+a:active {
+    outline: none;
+    text-decoration: none;
+}
+
+.link {}
 
 .wrapper {
     background-color: #F8F8F8;
@@ -100,16 +119,18 @@ ul li {
     flex-wrap: nowrap;
     flex-shrink: 0;
     margin: 0;
-    padding: 24px 0 10px 16px;
+    padding: 27px 0 10px 17px;
     overflow: auto;
 }
 
 .menu__list {
-    font-family: "TT Lakes Bold";
+    font-family: 'TT Lakes Regular';
     font-size: 16px;
     color: #7E7E82;
     white-space: nowrap;
-    padding: 5px;
+    padding: 7px 13px;
+    margin-right: 7px;
+    border: 2px solid transparent;
 }
 
 .menu__list:hover {
@@ -117,3 +138,17 @@ ul li {
     border: 2px solid #41F6D7;
     border-radius: 5px;
 }
+
+.menu__link {
+    color: #7E7E82;
+}
+
+.main__p {
+    font-family: 'TT Lakes Regular';
+    font-size: 14px;
+    line-height: 129%;
+    padding: 0 16px;
+    text-align: left;
+}
+
+.main__button {}
