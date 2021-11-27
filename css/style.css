@@ -19,6 +19,7 @@
 }
 
 body {
+    font-family: 'TT Lakes Regular';
     margin: 0;
 }
 
@@ -33,14 +34,11 @@ a:active {
     text-decoration: none;
 }
 
-
-
-
-
-
 .wrapper {
     background-color: #F8F8F8;
     height: 100vh;
+    margin: 0 auto;
+    max-width: 1120px;
 }
 
 
@@ -90,14 +88,18 @@ a:active {
 }
 
 .repair {
+    position: static;
     margin-right: 16px;
 }
 
-.checkstatus {}
+.checkstatus {
+    position: static;
+}
 
 .main {}
 
 .main__title {
+    position: relative;
     font-family: "TT Lakes Bold";
     font-size: 28px;
     letter-spacing: -0.6px;
@@ -114,8 +116,9 @@ a:active {
     border-top: 8px solid #41F6D7;
     border-radius: 50px;
     left: -20px;
-    top: 128px;
+    top: 40px;
 }
+
 
 .menu {
     display: flex;
@@ -127,7 +130,6 @@ a:active {
 }
 
 .menu__list {
-    font-family: 'TT Lakes Regular';
     font-size: 16px;
     color: #7E7E82;
     white-space: nowrap;
@@ -144,21 +146,96 @@ a:active {
 
 .menu__link {
     color: #7E7E82;
+
 }
 
 .main__p {
-    font-family: 'TT Lakes Regular';
     font-size: 14px;
     line-height: 129%;
+    letter-spacing: 0.2px;
     padding: 0 16px;
     text-align: left;
 }
 
 .main__button {}
 
+
+
 @media (min-width: 1120px) {
     .contact {
         display: none;
+    }
+
+    .service {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .repair-block {
+        margin-right: 32px;
+    }
+
+    .repair {
+        position: relative;
+        margin-right: 160px;
+    }
+
+    .checkstatus {
+        position: relative;
+    }
+
+    .repair::before {
+        content: "Оставить заявку";
+        display: block;
+        position: absolute;
+        white-space: nowrap;
+        right: 50px;
+        color: #1B1C21;
+    }
+
+    .checkstatus::before {
+        content: "Статус ремонта";
+        display: block;
+        position: absolute;
+        white-space: nowrap;
+        right: 50px;
+        color: #1B1C21;
+    }
+
+    .repair-block::before {
+        content: "";
+        display: none;
+        position: absolute;
+        width: 32px;
+        border-top: 2px solid #EAEAEA;
+        transform: rotate(90deg);
+        right: 117px;
+        top: 44px;
+    }
+
+    .main__title {
+        position: relative;
+        font-family: "TT Lakes Bold";
+        font-size: 28px;
+        letter-spacing: -0.6px;
+        margin: 0;
+        padding: 24px 16px 0;
+    }
+
+    .main__title::before {
+        content: "";
+        display: block;
+        position: absolute;
+        transform: rotate(90deg);
+        width: 40px;
+        border-top: 4px solid #41F6D7;
+        border-radius: 50px;
+        left: -20px;
+        top: 40px;
     }
 }
 
@@ -178,16 +255,86 @@ a:active {
         margin-right: 16px;
     }
 
+    .main__repair-block {
+        display: none;
+    }
+
 
 }
 
 @media (max-width: 768px) {
+
+    .header {
+        display: flex;
+        background-color: #fff;
+        height: 88px;
+        align-items: center;
+        padding: 0 16px;
+    }
+
+    .header__button {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        background-color: #FF3E79;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        padding: 0 16px;
+    }
+
     .repair-block {
         display: flex;
         margin-left: auto;
     }
 
+    .repair-block::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 32px;
+        border-top: 2px solid #EAEAEA;
+        transform: rotate(90deg);
+        right: 120px;
+        top: 44px;
+    }
+
+    .repair {
+        margin-right: 16px;
+    }
+
+
+    .checkstatus {}
+
     .contact {
         display: none;
+    }
+
+    .main__repair-block {
+        display: none;
+    }
+
+    .main__title {
+        position: relative;
+        font-family: "TT Lakes Bold";
+        font-size: 28px;
+        letter-spacing: -0.6px;
+        margin: 0;
+        padding: 24px 16px 0;
+    }
+
+    .main__title::before {
+        content: "";
+        display: block;
+        position: absolute;
+        transform: rotate(90deg);
+        width: 40px;
+        border-top: 8px solid #41F6D7;
+        border-radius: 50px;
+        left: -20px;
+        top: 40px;
     }
 }
