@@ -155,9 +155,9 @@ a:active {
     content: '';
     position: absolute;
     right: 0;
-    top: 0;
+    top: 180px;
     width: 25px;
-    height: 100%;
+    height: 30px;
     background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
 }
 
@@ -192,7 +192,7 @@ a:active {
     line-height: 18px;
     padding: 0 16px 10px;
     letter-spacing: 0.2px;
-    margin-top: -10px;
+    margin-top: -15px;
 }
 
 .main__button {
@@ -235,7 +235,9 @@ a:active {
 
 .img {}
 
-.main__img {}
+.main__img {
+    width: 320px;
+}
 
 
 @media (min-width: 1120px) {
@@ -249,7 +251,7 @@ a:active {
     }
 
     .repair-block {
-        margin-right: 32px;
+        margin-right: 47px;
     }
 
     .repair {
@@ -265,6 +267,9 @@ a:active {
         content: "Оставить заявку";
         display: block;
         position: absolute;
+        font-family: 'TT Lakes Medium';
+        font-size: 16px;
+        letter-spacing: -0.2px;
         white-space: nowrap;
         right: 50px;
         color: #1B1C21;
@@ -274,6 +279,9 @@ a:active {
         content: "Статус ремонта";
         display: block;
         position: absolute;
+        font-family: 'TT Lakes Medium';
+        font-size: 16px;
+        letter-spacing: -0.2px;
         white-space: nowrap;
         right: 50px;
         color: #1B1C21;
@@ -292,6 +300,8 @@ a:active {
 
     .menu {
         flex-wrap: wrap;
+        margin-top: -15px;
+        margin-left: 6px;
     }
 
     .main__title::before {
@@ -305,9 +315,23 @@ a:active {
         left: -20px;
         top: 40px;
     }
+
+    .main__p {
+        margin-top: auto;
+        line-height: 20px;
+        width: 490px;
+        height: 160px;
+    }
+
+    .main__img {
+        margin-left: 23px;
+        margin-top: 4px;
+        border-radius: 5px;
+        width: 550px;
+    }
 }
 
-@media (max-width: 1120px) and (min-width: 768px) {
+@media (max-width: 1119px) and (min-width: 768px) {
     .logo {
         position: relative;
         padding: 3px 42px 0;
@@ -357,13 +381,11 @@ a:active {
         line-height: 143%;
         overflow: hidden;
         height: 160px;
-        width: 312px;
+
     }
 
     .img {
-        margin-top: -17px;
-        margin-left: -15px;
-
+        margin: -17px auto;
     }
 
     .main__img {
