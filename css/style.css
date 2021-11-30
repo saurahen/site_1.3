@@ -33,7 +33,7 @@ body {
     font-family: 'TT Lakes Regular';
     font-size: 14px;
     margin: 0;
-    background: #F8F8F8;
+    background: #F2F2F2;
 }
 
 ul li {
@@ -48,7 +48,7 @@ a:active {
 }
 
 .wrapper {
-    background-color: #F8F8F8;
+    background: #F8F8F8;
     height: 100vh;
     margin: 0 auto;
     max-width: 1120px;
