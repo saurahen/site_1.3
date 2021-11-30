@@ -33,6 +33,7 @@ body {
     font-family: 'TT Lakes Regular';
     font-size: 14px;
     margin: 0;
+    background: #F8F8F8;
 }
 
 ul li {
@@ -251,7 +252,7 @@ a:active {
     }
 
     .repair-block {
-        margin-right: 47px;
+        margin-right: 35px;
     }
 
     .repair {
@@ -304,6 +305,10 @@ a:active {
         margin-left: 6px;
     }
 
+    .main__title {
+        padding-left: 30px;
+    }
+
     .main__title::before {
         content: "";
         display: block;
@@ -318,6 +323,7 @@ a:active {
 
     .main__p {
         margin-top: auto;
+        margin-left: 15px;
         line-height: 20px;
         width: 490px;
         height: 160px;
@@ -386,6 +392,7 @@ a:active {
 
     .img {
         margin: -17px auto;
+        padding-right: 20px;
     }
 
     .main__img {
