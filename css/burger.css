@@ -98,7 +98,7 @@ a:active {
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #1B1C21;
-    transition-duration: 300ms;
+    transition-duration: 350ms;
 }
 
 .burger-menu__link:hover {
@@ -178,4 +178,10 @@ a:active {
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #1B1C21;
+    transition-duration: 350ms;
+}
+
+.change-lang__button:hover {
+    color: #7E7E82;
+    opacity: 0.8;
 }
