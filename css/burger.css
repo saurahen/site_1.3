@@ -31,9 +31,10 @@ a:focus,
 a:active {
     outline: none;
     text-decoration: none;
+    cursor: pointer;
 }
 
-.burger-body {
+.aside {
     display: flex;
     flex-direction: column;
     width: 320px;
@@ -46,6 +47,11 @@ a:active {
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+    transition-duration: 350ms;
+}
+
+.button:hover {
+    opacity: 0.8;
 }
 
 .circle__button {
@@ -58,25 +64,25 @@ a:active {
     justify-content: center;
 }
 
-.burger-body__header {
+.aside__header {
     display: flex;
     padding-top: 24px;
 }
 
-.burger-body__close-button {
+.aside__close-button {
     margin: 0 16.7px 0 23px;
 }
 
-.burger-body__logo {
+.aside__logo {
     margin-top: -5px;
 }
 
-.burger-body__search-button {
+.aside__search-button {
     margin-left: auto;
     margin-right: 23px;
 }
 
-.burger-body__menu {
+.aside__menu {
     margin-bottom: auto;
 }
 
@@ -117,16 +123,16 @@ a:active {
     transform: rotate(90deg);
 }
 
-.burger-body__footer {
+.aside__footer {
     margin-top: auto;
 }
 
-.footer-contact-button {
+.footer-contact-buttons {
     display: flex;
     padding: 0 0 0 24px;
 }
 
-.footer-contact-button__item {
+.footer-contact-buttons__item {
     margin: 0 16px 16px 0;
 }
 
@@ -145,6 +151,11 @@ a:active {
     letter-spacing: -0.2px;
     color: #1B1C21;
     padding: 0 0 12px 24px;
+    transition-duration: 350ms;
+}
+
+.footer-email:hover {
+    opacity: 0.8;
 }
 
 .footer-phone {
@@ -154,6 +165,11 @@ a:active {
     letter-spacing: -0.6px;
     color: #1B1C21;
     padding: 0 0 0 24px;
+    transition-duration: 350ms;
+}
+
+.footer-phone:hover {
+    opacity: 0.8;
 }
 
 .change-lang {
