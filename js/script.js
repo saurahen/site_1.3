@@ -1,16 +1,39 @@
-if (window.matchMedia('screen and (max-width: 767px)').matches) {
+// if (window.matchMedia('(max-width: 767px)').matches) {
+//   const swiper = new Swiper('.swiper', {
+//     // Навигация
+//     // Буллеты, текущее полодение, прогрессбар
+//     pagination: {
+//       el: '.swiper-pagination',
+//       // Буллеты
+//       clickable: true,
+//     },
+//     slidesPerView: 'auto',
+//     spaceBetween: 1,
+//   });
+// }
+
+function initSwiper() {
   const swiper = new Swiper('.swiper', {
-    // Навигация
-    // Буллеты, текущее полодение, прогрессбар
     pagination: {
       el: '.swiper-pagination',
-      // Буллеты
       clickable: true,
     },
     slidesPerView: 'auto',
     spaceBetween: 1,
   });
-};
+}
+
+if (matchMedia) {
+  var screen = window.matchMedia('(max-width: 767px)');
+  screen.addListener(changes);
+  changes(screen);
+}
+
+function changes(screen) {
+  if (screen.matches) {
+    initSwiper();
+  }
+}
 
 let swiperWrapper = document.querySelector('.swiper-wrapper');
 let showMorebtn = document.querySelector('.read-more-button');

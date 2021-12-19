@@ -48,11 +48,11 @@ body {
     text-transform: uppercase;
     color: #7E7E82;
     margin: 0;
-    padding: 17px 0 0 15px;
+    padding: 17px 15px 0 15px;
 }
 
 .swiper-wrapper {
-    height: 150px;
+    height: 100px;
 }
 
 
@@ -221,9 +221,9 @@ body {
         margin-left: 16px;
     }
 
+
     .swiper-pagination {
         top: 183px;
-        margin-left: 5px;
     }
 
     .swiper-pagination-bullet {
