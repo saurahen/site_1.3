@@ -139,6 +139,11 @@ body {
     .swiper-slide {
         height: auto;
         width: auto;
+        transition: opacity 450ms;
+    }
+
+    .swiper-slide:hover {
+        filter: brightness(90%);
     }
 
     .read-more-button {
