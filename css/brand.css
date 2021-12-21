@@ -35,7 +35,7 @@ body {
 .brand__header {
     margin: 0;
     padding: 0;
-    background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    background: linear-gradient(90deg, #f2f2f2 30%, #FFFFFF 100%);
     height: 80px;
     margin-bottom: 16px;
 }
@@ -109,6 +109,11 @@ body {
 
     .brand__title {
         margin-left: 15px;
+        transition: opacity 400ms;
+    }
+
+    .brand__title:hover {
+        opacity: 0.7;
     }
 
 
@@ -143,6 +148,11 @@ body {
         padding: 0 48px 17px;
         letter-spacing: -0.2px;
         margin: 10px 0 0 12px;
+        transition: opacity 400ms;
+    }
+
+    .read-more-button:hover {
+        opacity: 0.6;
     }
 
     .read-more-button--active {
